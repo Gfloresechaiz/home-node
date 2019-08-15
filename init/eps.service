@@ -4,12 +4,12 @@ After=bitcoind.service
 Requires=bitcoind.service
 
 [Service]
-ExecStart=/home/satoshi/.local/bin/electrum-personal-server /home/satoshi/eps/config.cfg
+ExecStart=/home/rock64/.local/bin/electrum-personal-server /home/rock64/eps/config.cfg
 
 RuntimeDirectory=eps
 PIDFile=/run/eps/eps.pid
-User=satoshi
-Group=satoshi
+User=rock64
+Group=rock64
 
 Type=simple
 KillMode=process
