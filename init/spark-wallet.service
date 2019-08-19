@@ -4,8 +4,8 @@ Requires=lightningd.service
 After=lightningd.service
 
 [Service]
-User=satoshi
-Group=satoshi
+User=rock64
+Group=rock64
 Restart=on-failure
 
 ExecStart=/home/satoshi/.npm-global/bin/spark-wallet
