@@ -12,14 +12,15 @@ Description=Bitcoin daemon
 After=network.target
 
 [Service]
-ExecStartPre=/bin/sleep 90
+ExecStartPre=/bin/sleep 60
 ExecStart=/usr/bin/bitcoind -daemon -conf=/home/rock64/.bitcoin/bitcoin.conf -pid=/run/bitcoind/bitcoind.pid
-# Creates /run/bitcoind owned by bitcoin
+ExecStop=/usr/bin/bitcoin-cli stop
 RuntimeDirectory=bitcoind
 User=rock64
 Type=forking
 PIDFile=/run/bitcoind/bitcoind.pid
 Restart=on-failure
+TimeoutSec=900
 
 # Hardening measures
 ####################
