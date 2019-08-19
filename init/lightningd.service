@@ -18,8 +18,8 @@ ExecStart=/usr/local/bin/lightningd --daemon --conf /home/satoshi/.lightning/con
 # Creates /run/lightningd owned by bitcoin
 RuntimeDirectory=lightningd
 
-User=satoshi
-Group=satoshi
+User=rock64
+Group=rock64
 Type=forking
 PIDFile=/run/lightningd/lightningd.pid
 Restart=on-failure
