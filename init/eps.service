@@ -4,7 +4,7 @@ After=bitcoind.service
 Requires=bitcoind.service
 
 [Service]
-ExecStart=/home/rock64/.local/bin/electrum-personal-server /home/rock64/eps/config.cfg
+ExecStart=/home/rock64/.local/bin/electrum-personal-server /home/rock64/eps/config.ini
 
 RuntimeDirectory=eps
 PIDFile=/run/eps/eps.pid
