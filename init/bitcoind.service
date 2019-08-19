@@ -12,6 +12,7 @@ Description=Bitcoin daemon
 After=network.target
 
 [Service]
+ExecStartPre=/bin/sleep 90
 ExecStart=/usr/bin/bitcoind -daemon -conf=/home/rock64/.bitcoin/bitcoin.conf -pid=/run/bitcoind/bitcoind.pid
 # Creates /run/bitcoind owned by bitcoin
 RuntimeDirectory=bitcoind
