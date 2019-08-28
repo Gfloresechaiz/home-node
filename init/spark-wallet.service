@@ -8,7 +8,7 @@ User=rock64
 Group=rock64
 Restart=on-failure
 
-ExecStart=/home/rock64/.npm-global/bin/spark-wallet
+ExecStart=/usr/local/bin/spark-wallet
 
 SyslogIdentifier=spark-wallet
 PIDFile=/var/run/spark-wallet.pid
